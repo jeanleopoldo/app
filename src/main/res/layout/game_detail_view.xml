@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/gameTextView"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Game"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/gameTextView"
+        android:layout_below="@+id/gameTextView"
+        android:text="Time"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/stadiumTextView"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/gameTextView"
+        android:layout_below="@+id/timeTextView"
+        android:text="Stadium"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/cityTextView"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/gameTextView"
+        android:layout_below="@+id/stadiumTextView"
+        android:text="City"
+        android:textSize="10sp" />
+</RelativeLayout>

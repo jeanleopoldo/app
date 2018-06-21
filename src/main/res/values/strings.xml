@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">cbfAPP</string>
+    <string name="title_activity_show_maps">Map</string>
+    <string name="title_activity_news_detail">NewsDetail</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

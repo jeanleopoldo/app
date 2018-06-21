@@ -1,7 +1,7 @@
 package com.aula.cbfapp.app.team;
 
 import com.aula.cbfapp.app.player.Player;
-import com.aula.cbfapp.app.table.Game;
+import com.aula.cbfapp.app.schedule.Game;
 
 import java.util.ArrayList;
 

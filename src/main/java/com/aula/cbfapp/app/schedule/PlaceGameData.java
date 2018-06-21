@@ -2,7 +2,6 @@ package com.aula.cbfapp.app.schedule;
 
 import com.aula.cbfapp.app.stadium.Stadium;
 import com.aula.cbfapp.app.stadium.StadiumHandler;
-import com.aula.cbfapp.app.table.Game;
 
 public class PlaceGameData {
 

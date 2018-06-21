@@ -1,4 +1,4 @@
-package com.aula.cbfapp.app.table;
+package com.aula.cbfapp.app.schedule;
 
 import com.aula.cbfapp.app.team.Team;
 

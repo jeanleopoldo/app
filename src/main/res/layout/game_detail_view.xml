@@ -3,39 +3,84 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/gameTextView"
-        android:layout_width="314dp"
+        android:id="@+id/team1"
+        android:layout_width="137dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="Game"
+        android:layout_toStartOf="@+id/resultTeam1"
+        android:text="team1"
+        android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/timeTextView"
-        android:layout_width="196dp"
+        android:layout_width="197dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/gameTextView"
-        android:layout_below="@+id/gameTextView"
+        android:layout_below="@+id/team1"
+        android:layout_centerHorizontal="true"
         android:text="Time"
+        android:textAlignment="center"
         android:textSize="12sp" />
 
     <TextView
         android:id="@+id/stadiumTextView"
         android:layout_width="197dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/gameTextView"
         android:layout_below="@+id/timeTextView"
+        android:layout_centerHorizontal="true"
         android:text="Stadium"
+        android:textAlignment="center"
         android:textSize="12sp" />
 
     <TextView
         android:id="@+id/cityTextView"
         android:layout_width="197dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/gameTextView"
         android:layout_below="@+id/stadiumTextView"
+        android:layout_centerHorizontal="true"
         android:text="City"
+        android:textAlignment="center"
         android:textSize="10sp" />
+
+    <EditText
+        android:id="@+id/resultTeam1"
+        android:layout_width="34dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/versus"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="R1" />
+
+    <TextView
+        android:id="@+id/versus"
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="vs"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/team2"
+        android:layout_width="137dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/resultTeam2"
+        android:text="Team2"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/resultTeam2"
+        android:layout_width="34dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/versus"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="R2" />
 </RelativeLayout>

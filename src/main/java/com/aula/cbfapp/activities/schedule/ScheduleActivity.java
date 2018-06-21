@@ -10,7 +10,7 @@ import android.widget.ListView;
 import com.aula.cbfapp.R;
 import com.aula.cbfapp.activities.maps.ShowMapsActivity;
 import com.aula.cbfapp.app.schedule.Schedule;
-import com.aula.cbfapp.app.table.Game;
+import com.aula.cbfapp.app.schedule.Game;
 
 import java.util.ArrayList;
 
@@ -22,7 +22,8 @@ public class ScheduleActivity extends AppCompatActivity {
 
     private ListView gamesListView;
 
-    private String [] gamesString;
+    private String [] team1;
+    private String [] team2;
     private String [] timesString;
     private String [] stadiumsString;
     private String [] citiesString;
@@ -45,7 +46,7 @@ public class ScheduleActivity extends AppCompatActivity {
     }
 
     private void setAdapter() {
-        ScheduleAdapter sa = new ScheduleAdapter(this,gamesString, timesString, stadiumsString, citiesString);
+        ScheduleAdapter sa = new ScheduleAdapter(this,team1, team2, timesString, stadiumsString, citiesString);
         this.gamesListView.setAdapter(sa);
     }
 
@@ -75,7 +76,7 @@ public class ScheduleActivity extends AppCompatActivity {
 
     private void populateLists() {
         for (int i = 0; i < games.size(); i++) {
-            populateGames(i);
+            populateTeams(i);
             populateTimes(i);
             populateStadiums(i);
             populateCities(i);
@@ -103,7 +104,8 @@ public class ScheduleActivity extends AppCompatActivity {
 
     private void initializeArrays() {
 
-        this.gamesString = new String[this.games.size()];
+        this.team1 = new String[this.games.size()];
+        this.team2 = new String[this.games.size()];
         this.timesString = new String[this.games.size()];
         this.stadiumsString = new String[this.games.size()];
         this.citiesString = new String[this.games.size()];
@@ -114,9 +116,9 @@ public class ScheduleActivity extends AppCompatActivity {
         this.citiesString[i] = c;
     }
 
-    private void populateGames(int i) {
-        String g = formatGame(games.get(i));
-        this.gamesString[i] = g;
+    private void populateTeams(int i) {
+        this.team1[i] = this.games.get(i).getTeam1().getCountry();
+        this.team2[i] = this.games.get(i).getTeam2().getCountry();
     }
 
     private void populateTimes(int i) {

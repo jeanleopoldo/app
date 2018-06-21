@@ -2,9 +2,6 @@ package com.aula.cbfapp.app.schedule;
 
 import com.aula.cbfapp.app.cons.ConstantHolder;
 import com.aula.cbfapp.app.stadium.StadiumHandler;
-import com.aula.cbfapp.app.table.Game;
-import com.aula.cbfapp.app.table.Group;
-import com.aula.cbfapp.app.table.KnockOutStage;
 import com.aula.cbfapp.app.team.Team;
 import com.aula.cbfapp.app.team.TeamHandler;
 
